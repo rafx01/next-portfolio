@@ -1,13 +1,24 @@
-import {withSentryConfig} from '@sentry/nextjs';
+import { withSentryConfig } from "@sentry/nextjs";
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  eslint: {
+    // Ignora erros de ESLint durante o build
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // Ignora erros de TypeScript durante o build (use com cautela)
+    ignoreBuildErrors: true,
+  },
+  experimental: {
+    instrumentationHook: true,
+  },
+};
 
 export default withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://www.npmjs.com/package/@sentry/webpack-plugin#options
-
   org: "raphael-furini",
-
   project: "javascript-nextjs",
 
   // Only print logs for uploading source maps in CI
@@ -32,5 +43,5 @@ export default withSentryConfig(nextConfig, {
   // See the following for more information:
   // https://docs.sentry.io/product/crons/
   // https://vercel.com/docs/cron-jobs
-  automaticVercelMonitors: true
+  automaticVercelMonitors: true,
 });

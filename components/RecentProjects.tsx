@@ -6,11 +6,12 @@ export const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
       <h1 className="heading">
-        Alguns <span className="text-purple">Projetos recentes</span>
+        Alguns <span className="text-purple">projetos recentes</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
         {projects.map((item) => (
-          <div
+          <a
+            href={item.link}
             key={item.id}
             className="lg:min-h-[32.5rem] sm:h-[41rem] sm:w-[570px] h-[32rem] flex items-center justify-center  w-[80-vw]"
           >
@@ -53,7 +54,7 @@ export const RecentProjects = () => {
                 </div>
               </div>
             </PinContainer>
-          </div>
+          </a>
         ))}
       </div>
     </div>

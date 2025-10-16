@@ -1,14 +1,14 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "Sobre", link: "#about" },
+  { name: "Projetos", link: "#projects" },
+  { name: "Depoimentos", link: "#testimonials" },
+  { name: "Contato", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Sempre com ambição de aprender e poder ajudar. ",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -76,7 +76,7 @@ export const projects = [
     title: "Ycodify",
     des: "Plataforma de no-code",
     img: "/ycodify.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/remix.svg", "/plus.svg"],
     link: "https://www.ycodify.com/landing.html",
     linkReducer: "ycodify.com",
   },
@@ -85,7 +85,14 @@ export const projects = [
     title: "Comigo",
     des: "Aplicativo de rastreamento veicular",
     img: "/go.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: [
+      "/expo.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/docker.svg",
+      "/re.svg",
+      "/plus.svg",
+    ],
     link: "https://play.google.com/store/apps/details?id=com.semprecomigo.comigoapp&hl=pt_BR",
     linkReducer: "play.google.com",
   },
@@ -160,29 +167,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Desenvolvedor frontend",
+    desc: "Refatorei e criei componentes, fiz a parte de internacionalização e outros.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Desenvolvedor mobile ",
+    desc: "Mantive e melhorei um app de rastreamento veicular, utilizando Expo e React Native",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Ecossistema de desenvolvimento",
+    desc: "Fiz parte de todo o ecossistema do aplicativo, desde organização de backlog e sprints, passando por devops e testes, até o deploy.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Integrações externas",
+    desc: "Fiz integrações com gateways de pagamento, APIs de geolocalização e  outros.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -192,13 +199,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/rafx01",
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    link: "www.linkedin.com/in/raphael-furini",
   },
 ];

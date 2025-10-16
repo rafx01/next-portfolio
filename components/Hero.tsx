@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 export const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36" id="about">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -28,37 +28,41 @@ export const Hero = () => {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
-
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Portfolio
-          </p>
-
-          <TextGenerateEffect
-            words="Olá! Sou Raphael Furini"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
-
-          <div className="gap-y-2">
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              Programador há cerca de 3 anos, com foco em desenvolvimento
-              mobile.
+      <div className="justify-between items-center gap-x-10 w-full flex">
+        <div className="flex justify-center relative my-20 z-10">
+          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+            <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+              Portfolio
             </p>
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              Já experienciei todo o ecossistema que uma aplicação necessita,
-              desde o design e gerência do projeto, até o desenvolvimento,
-              envolvendo front e back-end, devops, testes, integrações etc.
-            </p>
-          </div>
 
-          <a href="#about">
-            <MagicButton
-              title="Confira meu trabalho"
-              icon={<FaLocationArrow />}
-              position="right"
+            <TextGenerateEffect
+              words="Olá! Sou Raphael Furini"
+              className="text-center text-[40px] md:text-5xl lg:text-6xl"
             />
-          </a>
+
+            <div className="gap-y-2">
+              <p className="text-justify md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                Programador há cerca de 3 anos, com foco em desenvolvimento
+                mobile.
+              </p>
+              <p className="text-justify md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                Já experienciei todo o ecossistema que uma aplicação necessita,
+                desde o design e gerência do projeto, até o desenvolvimento,
+                envolvendo front e back-end, devops, testes, integrações etc.
+              </p>
+            </div>
+
+            <a href="#about">
+              <MagicButton
+                title="Confira meu trabalho"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
+        </div>
+        <div className="relative h-full overflow-hidden rounded-full">
+          <img src="/eu.png" alt="bg-img" />
         </div>
       </div>
     </div>

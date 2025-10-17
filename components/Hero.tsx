@@ -28,7 +28,10 @@ export const Hero = () => {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
-      <div className="justify-between items-center gap-x-10 w-full flex">
+      <div className="flex-col sm:flex-row items-center gap-x-10 w-full flex">
+        <div className="relative  overflow-hidden rounded-full">
+          <img width={300} src="/eu.png" alt="bg-img" />
+        </div>
         <div className="flex justify-center relative my-20 z-10">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
@@ -52,7 +55,7 @@ export const Hero = () => {
               </p>
             </div>
 
-            <a href="#about">
+            <a href="#projects">
               <MagicButton
                 title="Confira meu trabalho"
                 icon={<FaLocationArrow />}
@@ -60,9 +63,6 @@ export const Hero = () => {
               />
             </a>
           </div>
-        </div>
-        <div className="relative h-full overflow-hidden rounded-full">
-          <img src="/eu.png" alt="bg-img" />
         </div>
       </div>
     </div>

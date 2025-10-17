@@ -18,6 +18,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 export const metadata: Metadata = {
   title: "Portfolio de Raphael",
   description: "Portfolio moderno feito com NextJS",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }: any) {

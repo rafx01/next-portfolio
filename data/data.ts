@@ -96,6 +96,15 @@ export const projects = [
     link: "https://play.google.com/store/apps/details?id=com.semprecomigo.comigoapp&hl=pt_BR",
     linkReducer: "play.google.com",
   },
+  {
+    id: 3,
+    title: "Teste Jungle Gaming",
+    des: "Teste técnico para Jungle Gaming",
+    img: "/jungle.png",
+    iconLists: ["/tail.svg", "/ts.svg", "/docker.svg", "/re.svg", "/plus.svg"],
+    link: "https://github.com/rafx01/teste-jungle",
+    linkReducer: "github.com",
+  },
 ];
 
 export const testimonials = [

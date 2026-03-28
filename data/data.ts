@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "Sobre", link: "#about" },
   { name: "Projetos", link: "#projects" },
-  { name: "Depoimentos", link: "#testimonials" },
+  //{ name: "Depoimentos", link: "#testimonials" },
   { name: "Contato", link: "#contact" },
 ];
 
@@ -104,6 +104,14 @@ export const projects = [
     iconLists: ["/tail.svg", "/ts.svg", "/docker.svg", "/re.svg", "/plus.svg"],
     link: "https://github.com/rafx01/teste-jungle",
     linkReducer: "github.com",
+  },
+  {
+    id: 4,
+    title: "Lauto Cargo",
+    des: "Aplicativo 'Dosojin' para motoristas",
+    img: "/dosojin.png",
+    iconLists: ["/dart.svg", "/flutter.svg"],
+    privateRepo: true,
   },
 ];
 

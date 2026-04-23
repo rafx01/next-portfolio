@@ -111,7 +111,17 @@ export const projects = [
     des: "Aplicativo 'Dosojin' para motoristas",
     img: "/dosojin.png",
     iconLists: ["/dart.svg", "/flutter.svg"],
+    linkReducer: "Dosojin",
     privateRepo: true,
+  },
+  {
+    id: 5,
+    title: "Tribo Airsoft",
+    des: "Sistema de jogos de airsoft e mais",
+    img: "/tribo.png",
+    iconLists: ["/tail.svg", "/ts.svg", "/re.svg", "/claude.svg", "/plus.svg"],
+    link: "https://triboairsoft.com/",
+    linkReducer: "triboairsoft.com",
   },
 ];
 

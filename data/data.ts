@@ -50,7 +50,7 @@ export const gridItems = [
   {
     id: 5,
     title:
-      "Atualmente trabalhando num aplicativo relacionado a exploração espacial",
+      "Atualmente trabalhando em uma aplicação de gerenciamento de motoristas",
     description: "Projeto pessoal",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",

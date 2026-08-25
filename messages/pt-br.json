@@ -1,0 +1,64 @@
+{
+  "Nav": {
+    "About": "Sobre",
+    "Projects": "Projetos",
+    "Contact": "Contato"
+  },
+  "Hero": {
+    "Title": "Olá! Sou Raphael Furini",
+    "Description1": "Programador há cerca de 3 anos, com foco em desenvolvimento mobile.",
+    "Description2": "Já experienciei todo o ecossistema que uma aplicação necessita, desde o design e gerência do projeto, até o desenvolvimento, envolvendo front e back-end, devops, testes, integrações etc.",
+    "CheckButton": "Confira meu trabalho"
+  },
+  "Bentogrid": {
+    "Card1": "Sempre com ambição de aprender e poder ajudar. ",
+    "Card2": "Sempre desejando melhorar",
+    "Card2Stack": "Meu stack",
+    "Card3": "Entusiasta de tecnologia e inovação",
+    "Card4": "Projeto pessoal",
+    "Card4Description": "Atualmente trabalhando em uma aplicação de gerenciamento de motoristas",
+    "Card5": "Quer entrar em contato?",
+    "Card5Button": "Copiar meu email"
+  },
+  "RecentProjects": {
+    "Title": "Alguns projetos recentes",
+    "AccessProject": "Acessar projeto",
+    "PrivateRepo": "Repositório privado",
+    "Card1": "Plataforma de no-code",
+    "Card2": "Aplicativo de rastreamento veicular",
+    "Card3": "Teste técnico para Jungle Gaming",
+    "Card4": "Aplicativo 'Dosojin' para motoristas",
+    "Card5": "Sistema de jogos de airsoft e mais"
+  },
+  "MyExperience": {
+    "Title": "Minha experiência",
+    "Card1Title": "Desenvolvedor frontend",
+    "Card1Description": "Refatorei e criei componentes, fiz a parte de internacionalização e outros.",
+    "Card2Title": "Desenvolvedor mobile",
+    "Card2Description": "Mantive e melhorei um app de rastreamento veicular, utilizando Expo e React Native",
+    "Card3Title": "Ecossistema de desenvolvimento",
+    "Card3Description": "Fiz parte de todo o ecossistema do aplicativo, desde organização de backlog e sprints, passando por devops e testes, até o deploy.",
+    "Card4Title": "Integrações externas",
+    "Card4Description": "Fiz integrações com gateways de pagamento, APIs de geolocalização e  outros."
+  },
+  "MyApproach": {
+    "Title": "Minha abordagem",
+    "Card1Reveal": "Fase 1",
+    "Card1Title": "Planejamento",
+    "Card1Description": "Estudo de caso, regras de negócio, publico-alvo, da stack tecnológica e mais.",
+    "Card2Reveal": "Fase 2",
+    "Card2Title": "Mão na massa",
+    "Card2Description": "Aqui é aonde vamos por a mão na massa, arquitetando o layout junto do time de design e fazendo o desenvolvimento do app.",
+    "Card3Reveal": "Fase 3",
+    "Card3Title": "Testes e lançamento",
+    "Card3Description": "Aqui onde serão executados os testes, ajustes finais, e, por fim, subir a aplicação para produção."
+  },
+  "Together": {
+    "Title": "Vamos fazer algo juntos?",
+    "Description": "Entra em contato comigo ;)",
+    "Button": "Entre em contato"
+  },
+  "Metadata": {
+    "Title": "Portfolio de Raphael"
+  }
+}

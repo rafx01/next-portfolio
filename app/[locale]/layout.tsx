@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 // import * as Sentry from "@sentry/nextjs";
 
 // // Add or edit your "generateMetadata" to include the Sentry trace data:
@@ -23,9 +24,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: any) {
+export default async function RootLayout({ children }: any) {
+  const messages = await getMessages();
   return (
-    <>
+    <NextIntlClientProvider messages={messages}>
       <html lang="en" suppressHydrationWarning>
         <head />
         <body>
@@ -39,6 +41,6 @@ export default function RootLayout({ children }: any) {
           </ThemeProvider>
         </body>
       </html>
-    </>
+    </NextIntlClientProvider>
   );
 }

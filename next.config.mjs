@@ -1,6 +1,7 @@
 import { withSentryConfig } from "@sentry/nextjs";
-
+import createNextIntlPlugin from "next-intl/plugin";
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   eslint: {
     // Ignora erros de ESLint durante o build
@@ -15,7 +16,9 @@ const nextConfig = {
   },
 };
 
-export default withSentryConfig(nextConfig, {
+const withNextIntl = createNextIntlPlugin("./i18n.ts");
+
+export default withSentryConfig(withNextIntl(nextConfig), {
   // For all available options, see:
   // https://www.npmjs.com/package/@sentry/webpack-plugin#options
   org: "raphael-furini",

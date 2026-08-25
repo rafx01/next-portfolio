@@ -1,0 +1,64 @@
+{
+  "Nav": {
+    "About": "About",
+    "Projects": "Projects",
+    "Contact": "Contact"
+  },
+  "Hero": {
+    "Title": "Hello! I'm Raphael Furini",
+    "Description1": "Programmer for about 4 years, with emphasis in mobile development.",
+    "Description2": "I've worked across the entire ecosystem an application needs — from design and project management to development, covering front and back-end, DevOps, testing, integrations and more.",
+    "CheckButton": "Check out my work"
+  },
+  "Bentogrid": {
+    "Card1": "Always eager to learn and to help.",
+    "Card2": "Always striving to improve",
+    "Card2Stack": "My stack",
+    "Card3": "Technology and innovation enthusiast",
+    "Card4": "Personal project",
+    "Card4Description": "Currently working on a driver management application",
+    "Card5": "Want to get in touch?",
+    "Card5Button": "Copy my email"
+  },
+  "RecentProjects": {
+    "Title": "A few recent projects",
+    "AccessProject": "View project",
+    "PrivateRepo": "Private repository",
+    "Card1": "No-code platform",
+    "Card2": "Vehicle tracking app",
+    "Card3": "Technical assessment for Jungle Gaming",
+    "Card4": "'Dosojin' app for drivers",
+    "Card5": "Airsoft game management system and more"
+  },
+  "MyExperience": {
+    "Title": "My experience",
+    "Card1Title": "Frontend developer",
+    "Card1Description": "Refactored and built components, handled internationalization and more.",
+    "Card2Title": "Mobile developer",
+    "Card2Description": "Maintained and improved a vehicle tracking app using Expo and React Native",
+    "Card3Title": "Development ecosystem",
+    "Card3Description": "I took part in the app's entire ecosystem, from backlog and sprint planning, through DevOps and testing, all the way to deployment.",
+    "Card4Title": "External integrations",
+    "Card4Description": "Built integrations with payment gateways, geolocation APIs and others."
+  },
+  "MyApproach": {
+    "Title": "My approach",
+    "Card1Reveal": "Phase 1",
+    "Card1Title": "Planning",
+    "Card1Description": "Case study, business rules, target audience, tech stack and more.",
+    "Card2Reveal": "Phase 2",
+    "Card2Title": "Hands-on",
+    "Card2Description": "This is where we get hands-on, architecting the layout together with the design team and building the app.",
+    "Card3Reveal": "Phase 3",
+    "Card3Title": "Testing and launch",
+    "Card3Description": "This is where testing and final adjustments happen and, at last, the app goes to production."
+  },
+  "Together": {
+    "Title": "Let's build something together?",
+    "Description": "Get in touch with me ;)",
+    "Button": "Get in touch"
+  },
+  "Metadata": {
+    "Title": "Raphael's Portfolio"
+  }
+}

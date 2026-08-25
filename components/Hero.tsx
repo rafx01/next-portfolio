@@ -3,8 +3,11 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { MagicButton } from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { useTranslations } from "next-intl";
 
 export const Hero = () => {
+  const t = useTranslations("Hero");
+
   return (
     <div className="pb-20 pt-36" id="about">
       <div>
@@ -45,8 +48,7 @@ export const Hero = () => {
 
             <div className="gap-y-2">
               <p className="text-justify md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                Programador há cerca de 3 anos, com foco em desenvolvimento
-                mobile.
+                {t("Title")}
               </p>
               <p className="text-justify md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
                 Já experienciei todo o ecossistema que uma aplicação necessita,

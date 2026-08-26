@@ -7,8 +7,15 @@ import { Hero } from "@/components/Hero";
 import { RecentProjects } from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data/data";
+import { setRequestLocale } from "next-intl/server";
 
-export default function Home() {
+export default function Home({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  setRequestLocale(locale);
+
   return (
     <main className="relative overflow-clip bg-black-100 flex justify-center items-center flex-col  mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">

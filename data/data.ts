@@ -1,14 +1,13 @@
 export const navItems = [
-  { name: "Sobre", link: "#about" },
-  { name: "Projetos", link: "#projects" },
-  //{ name: "Depoimentos", link: "#testimonials" },
-  { name: "Contato", link: "#contact" },
+  { name: "About", link: "#about" },
+  { name: "Projects", link: "#projects" },
+  { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "Sempre com ambição de aprender e poder ajudar. ",
+    title: "Card1",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -28,8 +27,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Meu stack",
-    description: "Sempre desejando melhorar",
+    title: "Card2Stack",
+    description: "Card2",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,7 +37,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Entusiasta de tecnologia e inovação",
+    title: "Card3",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,9 +48,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title:
-      "Atualmente trabalhando em uma aplicação de gerenciamento de motoristas",
-    description: "Projeto pessoal",
+    title: "Card4Description",
+    description: "Card4",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -60,13 +58,26 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Quer entrar em contato?",
+    title: "Card5",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
+  },
+];
+
+export const languages = [
+  {
+    title: "American english",
+    icon: "/usa.svg",
+    onclick: () => console.log("alo1"),
+  },
+  {
+    title: "Português brasileiro",
+    icon: "/bra.svg",
+    onclick: () => console.log("alo2"),
   },
 ];
 
@@ -122,39 +133,6 @@ export const projects = [
     iconLists: ["/tail.svg", "/ts.svg", "/re.svg", "/claude.svg", "/plus.svg"],
     link: "https://triboairsoft.com/",
     linkReducer: "triboairsoft.com",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
   },
 ];
 

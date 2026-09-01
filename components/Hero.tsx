@@ -42,24 +42,22 @@ export const Hero = () => {
             </p>
 
             <TextGenerateEffect
-              words="Olá! Sou Raphael Furini"
+              words={t("Title")}
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
             />
 
             <div className="gap-y-2">
               <p className="text-justify md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                {t("Title")}
+                {t("Description1")}
               </p>
               <p className="text-justify md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                Já experienciei todo o ecossistema que uma aplicação necessita,
-                desde o design e gerência do projeto, até o desenvolvimento,
-                envolvendo front e back-end, devops, testes, integrações etc.
+                {t("Description2")}
               </p>
             </div>
 
             <a href="#projects">
               <MagicButton
-                title="Confira meu trabalho"
+                title={t("CheckButton")}
                 icon={<FaLocationArrow />}
                 position="right"
               />

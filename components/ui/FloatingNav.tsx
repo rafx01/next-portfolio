@@ -8,6 +8,8 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/utils/cn";
+import { languages } from "@/data/data";
+import { useTranslations } from "next-intl";
 
 export const FloatingNav = ({
   navItems,
@@ -23,6 +25,8 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(true);
+
+  const t = useTranslations("Nav");
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
@@ -56,7 +60,7 @@ export const FloatingNav = ({
         }}
         className={cn(
           "flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
-          className
+          className,
         )}
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
@@ -70,13 +74,28 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500",
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className=" text-sm !cursor-pointer">{navItem.name}</span>
+            <span className=" text-sm !cursor-pointer">{t(navItem.name)}</span>
           </Link>
         ))}
+        <div className="flex flex-row items-center">
+          {languages.map((item, index) => (
+            <div
+              key={index}
+              className=" lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+            >
+              <img
+                onClick={item.onclick}
+                src={item.icon}
+                alt="icon5"
+                className="p-2 cursor-pointer"
+              />
+            </div>
+          ))}
+        </div>
       </motion.div>
     </AnimatePresence>
   );

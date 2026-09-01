@@ -11,6 +11,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import { MagicButton } from "./MagicButton";
+import { useTranslations } from "next-intl";
 
 export const BentoGrid = ({
   className,
@@ -24,7 +25,7 @@ export const BentoGrid = ({
       className={cn(
         // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
-        className
+        className,
       )}
     >
       {children}
@@ -71,12 +72,13 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText(email);
     setCopied(true);
   };
+  const t = useTranslations("Bentogrid");
 
   return (
     <div
       className={cn(
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
-        className
+        className,
       )}
       style={{
         background: "rgb(4,7,29)",
@@ -118,7 +120,7 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10",
           )}
         >
           {" "}
@@ -172,7 +174,7 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
               <MagicButton
-                title={copied ? "Email copiado!" : "Copiar meu email"}
+                title={copied ? t("Card5ButtonDone") : t("Card5Button")}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}

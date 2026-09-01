@@ -1,7 +1,10 @@
 import { gridItems } from "@/data/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import { useTranslations } from "next-intl";
 
 export const Grid = () => {
+  const t = useTranslations("Bentogrid");
+
   return (
     <section id="about">
       <BentoGrid>
@@ -9,8 +12,8 @@ export const Grid = () => {
           <BentoGridItem
             key={item.id}
             id={item.id}
-            title={item.title}
-            description={item.description}
+            title={t(item.title)}
+            description={t(item.description)}
             className={item.className}
             img={item.img}
             imgClassName={item.imgClassName}

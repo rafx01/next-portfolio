@@ -18,7 +18,8 @@
     "Card4": "Personal project",
     "Card4Description": "Currently working on a driver management application",
     "Card5": "Want to get in touch?",
-    "Card5Button": "Copy my email"
+    "Card5Button": "Copy my email",
+    "Card5ButtonDone": "Email copied!"
   },
   "RecentProjects": {
     "Title": "A few recent projects",

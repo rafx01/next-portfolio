@@ -12,8 +12,8 @@ export const Grid = () => {
           <BentoGridItem
             key={item.id}
             id={item.id}
-            title={t(item.title)}
-            description={t(item.description)}
+            title={item.title ? t(item.title) : ""}
+            description={item.description ? t(item.description) : ""}
             className={item.className}
             img={item.img}
             imgClassName={item.imgClassName}

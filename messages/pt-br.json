@@ -18,10 +18,11 @@
     "Card4": "Projeto pessoal",
     "Card4Description": "Atualmente trabalhando em uma aplicação de gerenciamento de motoristas",
     "Card5": "Quer entrar em contato?",
-    "Card5Button": "Copiar meu email"
+    "Card5Button": "Copiar meu email",
+    "Card5ButtonDone": "Email copiado!"
   },
   "RecentProjects": {
-    "Title": "Alguns projetos recentes",
+    "Title": "Alguns <purple>projetos recentes</purple>",
     "AccessProject": "Acessar projeto",
     "PrivateRepo": "Repositório privado",
     "Card1": "Plataforma de no-code",
@@ -31,9 +32,9 @@
     "Card5": "Sistema de jogos de airsoft e mais"
   },
   "MyExperience": {
-    "Title": "Minha experiência",
+    "Title": "Minha <purple>experiência</purple>",
     "Card1Title": "Desenvolvedor frontend",
-    "Card1Description": "Refatorei e criei componentes, fiz a parte de internacionalização e outros.",
+    "Card1Description": "Refatorei e criei componentes, fiz a parte de internacionalização e outros.",
     "Card2Title": "Desenvolvedor mobile",
     "Card2Description": "Mantive e melhorei um app de rastreamento veicular, utilizando Expo e React Native",
     "Card3Title": "Ecossistema de desenvolvimento",
@@ -42,7 +43,7 @@
     "Card4Description": "Fiz integrações com gateways de pagamento, APIs de geolocalização e  outros."
   },
   "MyApproach": {
-    "Title": "Minha abordagem",
+    "Title": "Minha <purple>abordagem</purple>",
     "Card1Reveal": "Fase 1",
     "Card1Title": "Planejamento",
     "Card1Description": "Estudo de caso, regras de negócio, publico-alvo, da stack tecnológica e mais.",
@@ -54,11 +55,17 @@
     "Card3Description": "Aqui onde serão executados os testes, ajustes finais, e, por fim, subir a aplicação para produção."
   },
   "Together": {
-    "Title": "Vamos fazer algo juntos?",
+    "Title": "Vamos fazer algo <purple>juntos?</purple>",
     "Description": "Entra em contato comigo ;)",
-    "Button": "Entre em contato"
+    "Button": "Entre em contato",
+    "Copyright": "Copyright © {year} Raphael Furini"
+  },
+  "Languages": {
+    "en-us": "American english",
+    "pt-br": "Português brasileiro"
   },
   "Metadata": {
-    "Title": "Portfolio de Raphael"
+    "Title": "Portfolio de Raphael",
+    "Description": "Portfolio moderno feito com NextJS"
   }
 }

@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { routing } from "@/i18n/routing";
@@ -17,13 +21,21 @@ import { routing } from "@/i18n/routing";
 //   };
 // }
 
-export const metadata: Metadata = {
-  title: "Portfolio de Raphael",
-  description: "Portfolio moderno feito com NextJS",
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("Title"),
+    description: t("Description"),
+    icons: {
+      icon: "/favicon.ico",
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

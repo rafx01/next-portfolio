@@ -22,7 +22,7 @@
     "Card5ButtonDone": "Email copied!"
   },
   "RecentProjects": {
-    "Title": "A few recent projects",
+    "Title": "A few <purple>recent projects</purple>",
     "AccessProject": "View project",
     "PrivateRepo": "Private repository",
     "Card1": "No-code platform",
@@ -32,7 +32,7 @@
     "Card5": "Airsoft game management system and more"
   },
   "MyExperience": {
-    "Title": "My experience",
+    "Title": "My <purple>experience</purple>",
     "Card1Title": "Frontend developer",
     "Card1Description": "Refactored and built components, handled internationalization and more.",
     "Card2Title": "Mobile developer",
@@ -43,7 +43,7 @@
     "Card4Description": "Built integrations with payment gateways, geolocation APIs and others."
   },
   "MyApproach": {
-    "Title": "My approach",
+    "Title": "My <purple>approach</purple>",
     "Card1Reveal": "Phase 1",
     "Card1Title": "Planning",
     "Card1Description": "Case study, business rules, target audience, tech stack and more.",
@@ -55,11 +55,17 @@
     "Card3Description": "This is where testing and final adjustments happen and, at last, the app goes to production."
   },
   "Together": {
-    "Title": "Let's build something together?",
+    "Title": "Let's build something <purple>together?</purple>",
     "Description": "Get in touch with me ;)",
-    "Button": "Get in touch"
+    "Button": "Get in touch",
+    "Copyright": "Copyright © {year} Raphael Furini"
+  },
+  "Languages": {
+    "en-us": "American english",
+    "pt-br": "Português brasileiro"
   },
   "Metadata": {
-    "Title": "Raphael's Portfolio"
+    "Title": "Raphael's Portfolio",
+    "Description": "Modern portfolio built with NextJS"
   }
 }

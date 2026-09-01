@@ -4,12 +4,17 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data/data";
 import { PinContainer } from "./ui/Pin";
+import { useTranslations } from "next-intl";
 
 export const RecentProjects = () => {
+  const t = useTranslations("RecentProjects");
+
   return (
     <div className="py-20" id="projects">
       <h1 className="heading">
-        Alguns <span className="text-purple">projetos recentes</span>
+        {t.rich("Title", {
+          purple: (chunks) => <span className="text-purple">{chunks}</span>,
+        })}
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
@@ -46,7 +51,7 @@ export const RecentProjects = () => {
                   margin: "1vh 0",
                 }}
               >
-                {item.des}
+                {t(item.des)}
               </p>
 
               <div className="flex items-center justify-between mt-7 mb-3">
@@ -67,8 +72,8 @@ export const RecentProjects = () => {
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     {item.privateRepo
-                      ? "Repositório privado"
-                      : "Acessar projeto"}
+                      ? t("PrivateRepo")
+                      : t("AccessProject")}
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>

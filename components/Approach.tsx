@@ -4,18 +4,23 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { useTranslations } from "next-intl";
 
 export const Approach = () => {
+  const t = useTranslations("MyApproach");
+
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        Minha <span className="text-purple">abordagem</span>
+        {t.rich("Title", {
+          purple: (chunks) => <span className="text-purple">{chunks}</span>,
+        })}
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <Card
-          title="Planejamento"
-          icon={<AceternityIcon order="Fase 1" />}
-          des="Estudo de caso, regras de negócio, publico-alvo, da stack tecnológica e mais."
+          title={t("Card1Title")}
+          icon={<AceternityIcon order={t("Card1Reveal")} />}
+          des={t("Card1Description")}
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -23,9 +28,9 @@ export const Approach = () => {
           />
         </Card>
         <Card
-          title="Mão na massa"
-          icon={<AceternityIcon order="Fase 2" />}
-          des="Aqui é aonde vamos por a mão na massa, arquitetando o layout junto do time de design e fazendo o desenvolvimento do app."
+          title={t("Card2Title")}
+          icon={<AceternityIcon order={t("Card2Reveal")} />}
+          des={t("Card2Description")}
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -38,9 +43,9 @@ export const Approach = () => {
           />
         </Card>
         <Card
-          title="Testes e lançamento"
-          icon={<AceternityIcon order="Fase 3" />}
-          des="Aqui onde serão executados os testes, ajustes finais, e, por fim, subir a aplicação para produção."
+          title={t("Card3Title")}
+          icon={<AceternityIcon order={t("Card3Reveal")} />}
+          des={t("Card3Description")}
         >
           <CanvasRevealEffect
             animationSpeed={3}

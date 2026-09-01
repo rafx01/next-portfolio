@@ -70,14 +70,12 @@ export const gridItems = [
 
 export const languages = [
   {
-    title: "American english",
+    locale: "en-us",
     icon: "/usa.svg",
-    onclick: () => console.log("alo1"),
   },
   {
-    title: "Português brasileiro",
+    locale: "pt-br",
     icon: "/bra.svg",
-    onclick: () => console.log("alo2"),
   },
 ];
 
@@ -85,7 +83,7 @@ export const projects = [
   {
     id: 1,
     title: "Ycodify",
-    des: "Plataforma de no-code",
+    des: "Card1",
     img: "/ycodify.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/remix.svg", "/plus.svg"],
     link: "https://www.ycodify.com/landing.html",
@@ -94,7 +92,7 @@ export const projects = [
   {
     id: 2,
     title: "Comigo",
-    des: "Aplicativo de rastreamento veicular",
+    des: "Card2",
     img: "/go.png",
     iconLists: [
       "/expo.svg",
@@ -110,7 +108,7 @@ export const projects = [
   {
     id: 3,
     title: "Teste Jungle Gaming",
-    des: "Teste técnico para Jungle Gaming",
+    des: "Card3",
     img: "/jungle.png",
     iconLists: ["/tail.svg", "/ts.svg", "/docker.svg", "/re.svg", "/plus.svg"],
     link: "https://github.com/rafx01/teste-jungle",
@@ -119,7 +117,7 @@ export const projects = [
   {
     id: 4,
     title: "Lauto Cargo",
-    des: "Aplicativo 'Dosojin' para motoristas",
+    des: "Card4",
     img: "/dosojin.png",
     iconLists: ["/dart.svg", "/flutter.svg"],
     linkReducer: "Dosojin",
@@ -128,7 +126,7 @@ export const projects = [
   {
     id: 5,
     title: "Tribo Airsoft",
-    des: "Sistema de jogos de airsoft e mais",
+    des: "Card5",
     img: "/tribo.png",
     iconLists: ["/tail.svg", "/ts.svg", "/re.svg", "/claude.svg", "/plus.svg"],
     link: "https://triboairsoft.com/",
@@ -172,29 +170,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Desenvolvedor frontend",
-    desc: "Refatorei e criei componentes, fiz a parte de internacionalização e outros.",
+    title: "Card1Title",
+    desc: "Card1Description",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Desenvolvedor mobile ",
-    desc: "Mantive e melhorei um app de rastreamento veicular, utilizando Expo e React Native",
+    title: "Card2Title",
+    desc: "Card2Description",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Ecossistema de desenvolvimento",
-    desc: "Fiz parte de todo o ecossistema do aplicativo, desde organização de backlog e sprints, passando por devops e testes, até o deploy.",
+    title: "Card3Title",
+    desc: "Card3Description",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Integrações externas",
-    desc: "Fiz integrações com gateways de pagamento, APIs de geolocalização e  outros.",
+    title: "Card4Title",
+    desc: "Card4Description",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

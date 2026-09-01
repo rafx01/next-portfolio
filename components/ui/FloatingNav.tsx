@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useTransition } from "react";
 import {
   motion,
   AnimatePresence,
@@ -9,7 +9,8 @@ import {
 import Link from "next/link";
 import { cn } from "@/utils/cn";
 import { languages } from "@/data/data";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/navigation";
 
 export const FloatingNav = ({
   navItems,
@@ -27,6 +28,20 @@ export const FloatingNav = ({
   const [visible, setVisible] = useState(true);
 
   const t = useTranslations("Nav");
+  const tLanguages = useTranslations("Languages");
+
+  const router = useRouter();
+  const pathname = usePathname();
+  const locale = useLocale();
+  const [isPending, startTransition] = useTransition();
+
+  const switchLocale = (nextLocale: string) => {
+    if (nextLocale === locale) return;
+
+    startTransition(() => {
+      router.replace(pathname, { locale: nextLocale });
+    });
+  };
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
@@ -82,18 +97,29 @@ export const FloatingNav = ({
           </Link>
         ))}
         <div className="flex flex-row items-center">
-          {languages.map((item, index) => (
-            <div
-              key={index}
-              className=" lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+          {languages.map((item) => (
+            <button
+              key={item.locale}
+              type="button"
+              onClick={() => switchLocale(item.locale)}
+              disabled={isPending}
+              title={tLanguages(item.locale)}
+              aria-label={tLanguages(item.locale)}
+              aria-current={item.locale === locale}
+              className={cn(
+                "lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center transition-opacity duration-200",
+                item.locale === locale
+                  ? "opacity-100"
+                  : "opacity-40 hover:opacity-80",
+                isPending && "cursor-wait",
+              )}
             >
               <img
-                onClick={item.onclick}
                 src={item.icon}
-                alt="icon5"
+                alt={tLanguages(item.locale)}
                 className="p-2 cursor-pointer"
               />
-            </div>
+            </button>
           ))}
         </div>
       </motion.div>
